@@ -1,0 +1,23 @@
+.tasks {
+    &__row {
+        padding: 50px 0;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        margin: 50px auto 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163.52%;
+        color: #171717;
+        max-width: 450px;
+        li {
+            &::marker {
+                font-size: .5em;
+            }
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
