@@ -1,0 +1,37 @@
+.promo {
+    &__row {
+        height: 500px;
+        padding: 0 50px 95px 105px;
+        &_home {
+            padding-top: 95px;
+            background: url('../img/home-promo.jpg') center center / cover no-repeat;
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 113.52%;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 179.02%;
+    }
+    &__title, &__subtitle, &__link {
+        color: #FFFFFF;
+    }
+    &__link {
+        display: inline-block;
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 163.52%;
+        text-decoration: underline;
+        text-transform: uppercase;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+}
