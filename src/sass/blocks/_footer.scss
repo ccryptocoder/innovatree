@@ -19,6 +19,10 @@
     }
     &__menu {
         &-item {
+            a {
+                text-decoration: none;
+                color: #181818;
+            }
             &:not(:last-child) {
                 margin-bottom: 20px;
             }
