@@ -1,0 +1,38 @@
+.footer {
+    padding-bottom: 40px;
+    &__row {
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163.52%;
+        color: #181818;
+    }
+    &__address {
+        margin-top: 20px;
+    }
+    &__email, &__phone {
+        a {
+            color: #181818;
+        }
+    }
+    &__menu {
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__social {
+        &-links {
+            margin-top: 35px;
+            display: flex;
+            a {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
