@@ -3,6 +3,7 @@
         padding: 50px 0;
     }
     &__list {
+        list-style: none;
         margin: 0;
         padding: 0;
         margin: 50px auto 0;
@@ -12,8 +13,16 @@
         color: #171717;
         max-width: 450px;
         li {
-            &::marker {
-                font-size: .5em;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background: #171717;
+                top: 13px;
+                left: -16px;
             }
             &:not(:last-child) {
                 margin-bottom: 35px;
