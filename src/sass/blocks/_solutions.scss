@@ -1,0 +1,34 @@
+.solutions {
+    padding: 100px 0 50px;
+    &__row {
+        
+    }
+    &__grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 520px 545px;
+        grid-template-rows: minmax(520px, auto);
+        column-gap: 65px;
+        place-content: center;
+        align-items: center;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text {
+        padding-right: 45px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 163.52%;
+        /* or 29px */
+
+
+        color: #171717;
+    }
+}
