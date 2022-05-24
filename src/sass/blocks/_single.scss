@@ -1,0 +1,50 @@
+.single-post {
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 840px;
+    &__date {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163%;
+        color: #181818;
+    }
+    &__title {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 179%;
+        color: #181818;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 565px;
+        height: 356px;
+        object-fit: cover;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163%;
+        color: #2C2C2C;
+    }
+    &__back {
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163.52%;
+        color: #181818;
+        svg {
+            margin-right: 10px;
+        }
+        &:hover {
+            color: #181818;
+            text-decoration: underline;
+        }
+    }
+}
