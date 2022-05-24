@@ -1,9 +1,11 @@
 .promo {
     &__row {
         height: 500px;
-        padding: 0 50px 95px 105px;
+        padding: 10px 50px 10px 105px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &_home {
-            padding-top: 95px;
             background: url('../img/home-promo.jpg') center center / cover no-repeat;
         }
     }
