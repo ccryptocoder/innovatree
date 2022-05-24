@@ -1,0 +1,22 @@
+.available {
+    padding: 50px 0;
+    &__grid {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 65px;
+        row-gap: 30px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 50px minmax(145px, 250px);
+        column-gap: 8px;
+        align-items: center;
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #181818;
+        }
+    }
+}
