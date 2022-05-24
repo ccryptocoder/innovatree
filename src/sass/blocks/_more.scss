@@ -1,8 +1,10 @@
 .more {
     padding-top: 100px;
     &__row {
-        padding: 50px 105px;
-        height: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 105px 80px;
         background: linear-gradient(147.05deg, rgba(6, 6, 6, 0.65) -25.49%, #181818 75.98%, #181818 75.98%);
     }
     &__title {

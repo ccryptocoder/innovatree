@@ -1,7 +1,7 @@
 .promo {
     &__row {
         height: 500px;
-        padding: 10px 50px 10px 105px;
+        padding: 10px 325px 10px 105px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,6 +16,9 @@
         }
         &_news {
             background: url('../img/news-promo.jpg') center center / cover no-repeat;
+        }
+        &_college {
+            background: url('../img/college-promo.jpg') center center / cover no-repeat;
         }
     }
     &__title {
@@ -44,5 +47,21 @@
         &:hover {
             color: #FFFFFF;
         }
+    }
+}
+
+.college-promo {
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 163%;
+        color: #FFFFFF;
     }
 }
