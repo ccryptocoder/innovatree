@@ -27,6 +27,9 @@
         &_kids {
             background: url('../img/kids-promo.jpg') center center / cover no-repeat;
         }
+        &_adults {
+            background: url('../img/adults-promo.jpg') center center / cover no-repeat;
+        }
     }
     &__title {
         font-weight: 600;
@@ -57,7 +60,7 @@
     }
 }
 
-.min-promo, .min-promo {
+.min-promo {
     &__title {
         font-weight: 600;
         font-size: 48px;
