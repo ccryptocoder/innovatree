@@ -1,0 +1,95 @@
+.c-goals {
+    padding: 100px 0 50px;
+    &__text {
+        max-width: 845px;
+        margin: 0 auto;
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 163%;
+        text-align: center;
+        color: #171717;
+    }
+}
+
+.c-grid {
+    padding: 50px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 412px);
+    grid-template-rows: repeat(2, 412px);
+    grid-auto-rows: 412px;
+    gap: 20px;
+    place-content: center;
+    &__item {
+        position: relative;
+        padding: 22px 20px;
+        &-img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+        &-link {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            text-decoration: none;
+        }
+        &-title {
+            max-width: 320px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 124%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &_form {
+            background: #00C834;
+            display: grid;
+            align-content: center;
+        }
+    }
+    &__form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        &-title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 124%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        input[type=text], input[type=email], input[type=tel] {
+            height: 50px;
+            width: 290px;
+            outline: none;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #FFF;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 163%;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        input[type=text], input[type=email] {
+            margin-bottom: 10px;
+        }
+        input[type=submit] {
+            position: absolute;
+            right: 0;
+            bottom: 16px;
+            width: 52px;
+            outline: none;
+            border: none;
+            background-color: unset;
+            background: url('../icons/arrow-right.svg') center center / contain no-repeat;
+        }
+    }
+}
