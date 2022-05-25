@@ -6,16 +6,19 @@
         color: #171717;
     }
     &__title {
+        margin-bottom: 40px;
         font-weight: 500;
         font-size: 24px;
         line-height: 179%;
         text-align: center;
     }
     &__text {
-        margin-top: 40px;
         font-weight: 400;
         font-size: 18px;
         line-height: 163.52%;
+        &_center {
+            text-align: center;
+        }
         ul {
             list-style: none;
             margin: 0;
