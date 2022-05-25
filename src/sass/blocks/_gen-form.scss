@@ -1,0 +1,46 @@
+.gen-form {
+    padding: 50px 0 150px;
+    width: 290px;
+    margin: 0 auto;
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 124%;
+        text-transform: uppercase;
+        color: #181818;
+    }
+    &__form {
+        position: relative;
+        input[type=text], input[type=email], input[type=tel] {
+            padding-left: 2px;
+            height: 50px;
+            width: 100%;
+            outline: none;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #181818;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 163.52%;
+                color: rgba(24, 24, 24, 0.5);
+            }
+        }
+        input[type=text] {
+            margin-top: 5px;
+        }
+        input[type=text], input[type=email] {
+            margin-bottom: 10px;
+        }
+        input[type=submit] {
+            position: absolute;
+            right: -85px;
+            bottom: 16px;
+            width: 52px;
+            outline: none;
+            border: none;
+            background-color: unset;
+            background: url('../icons/arrow-right-black.svg') center center / contain no-repeat;
+        }
+    }
+}

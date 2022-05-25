@@ -1,0 +1,38 @@
+.course {
+    padding: 100px 0 50px;
+    &__title, &__text {
+        max-width: 740px;
+        margin: 0 auto;
+        color: #171717;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 179%;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 163.52%;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 20px;
+            li {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 100%;
+                    background: #171717;
+                    top: 13px;
+                    left: -16px;
+                }
+            }
+        }
+    }
+}
