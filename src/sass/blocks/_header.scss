@@ -54,6 +54,10 @@
             color: #181818;
             text-decoration: none;
         }
+        &_active a {
+            font-weight: 500;
+            color: #00C834;
+        }
         &:not(:last-child) {
             margin-right: 75px;
         }
