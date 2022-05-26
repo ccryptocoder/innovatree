@@ -52,6 +52,9 @@
             }
         }
     }
+    &__side {
+        display: contents;
+    }
 }
 
 @media (max-width: 1139px) {
@@ -69,9 +72,33 @@
     .footer {
         &__row {
             font-size: 14px;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: flex-end;
+            align-items: flex-end;
+        }
+        &__contact {
+            font-size: 13px;
+        }
+        &__side {
+            display: block;
+        }
+        &__social {
+            &-title {
+                display: none;
+            }
+            &-links {
+                margin-top: 30px;
+                a svg {
+                    width: 30px; height: 30px;
+                }
+                a:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+        &__menu-item {
+            text-align: right;
         }
     }
 }

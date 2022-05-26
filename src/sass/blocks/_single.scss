@@ -20,6 +20,7 @@
         margin: 0 auto;
         margin-top: 20px;
         width: 565px;
+        max-width: 100%;
         height: 356px;
         object-fit: cover;
     }
@@ -45,6 +46,28 @@
         &:hover {
             color: #181818;
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .single-post {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .single-post {
+        &__img {
+            height: auto;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 147%;
+            margin-top: 5px;
+        }
+        &__text {
+            font-size: 16px;
         }
     }
 }
