@@ -24,3 +24,14 @@
         padding: 0 10px;
     }
 }
+
+@media (max-width: 1139px) {
+    .policy {
+        &__list {
+            font-size: 16px;
+            li:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

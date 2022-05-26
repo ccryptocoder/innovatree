@@ -43,3 +43,20 @@
         }
     }
 }
+
+@media (max-width: 1299px) { //ot 1140 
+    .more {
+        &__row {
+            padding: 60px 55px 80px;
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__link {
+            font-size: 22px;
+            &-text {
+                margin-right: 20px;
+            }
+        }
+    }
+}

@@ -63,3 +63,17 @@
         }
     }
 }
+
+@media (max-width: 1299px) {
+    .menu__item:not(:last-child) {
+        margin-right: 45px;
+    }
+}
+
+@media (max-width: 1139px) {
+    .menu {
+        &__item a {
+            font-size: 14px;
+        }
+    }
+}

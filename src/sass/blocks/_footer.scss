@@ -41,3 +41,14 @@
         }
     }
 }
+
+@media (max-width: 1139px) {
+    .footer {
+        &__row {
+            font-size: 16px;
+        }
+        &__social-links a:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+}

@@ -23,9 +23,37 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 163.52%;
-        /* or 29px */
-
-
         color: #171717;
+    }
+}
+
+@media (max-width: 1299px) { //ot 1140
+    .solutions {
+        &__grid {
+            grid-template-columns: 465px 470px;
+            grid-template-rows: minmax(455px,auto);
+            column-gap: 55px;
+        }
+    }
+}
+
+@media (max-width: 1139px) {
+    .solutions {
+        &__grid {
+            grid-template-columns: 390px 440px;
+            grid-template-rows: minmax(425px,auto);
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .solutions {
+        &__grid {
+            grid-template-columns: 340px 350px;
+            column-gap: 35px;
+        }
     }
 }
