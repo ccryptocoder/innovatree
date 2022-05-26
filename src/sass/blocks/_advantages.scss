@@ -91,3 +91,20 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 30px 0;
+        &__grid-t2 {
+            display: flex;
+            flex-direction: column;
+        }
+        &__grid-t1 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__img {
+            margin-top: 15px;
+        }
+    }
+}

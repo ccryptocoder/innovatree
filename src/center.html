@@ -16,27 +16,39 @@
         <div class="container">
             <div class="header__row">
                 <a href="index.html" class="header__logo"><img src="icons/logo.png" alt=""></a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="index.html">Главная</a></li>
-                        <li class="menu__item"><a href="about.html">О нас</a></li>
-                        <li class="menu__item"><a href="students.html">Студенту</a></li>
-                        <li class="menu__item"><a href="#">
-                            Проекты 
-                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 7.39844L12.1244 0.5H0L6 7.39844Z" fill="#A8A8A8"/>
-                            </svg>
-                        </a>
-                        </li>
-                        <li class="menu__item"><a href="news.html">Новости</a></li>
-                        <li class="menu__item"><a href="#">Контакты</a></li>
+                <div class="header__mobile" data-menu-mobile>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item" data-menu-item><a href="index.html">Главная</a></li>
+                            <li class="menu__item" data-menu-item><a href="about.html">О нас</a></li>
+                            <li class="menu__item" data-menu-item><a href="students.html">Студенту</a></li>
+                            <li class="menu__item" data-menu-item id="menuProjects" data-menu-projects>
+                                <a href="#">
+                                Проекты 
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 7.39844L12.1244 0.5H0L6 7.39844Z" fill="#A8A8A8"/>
+                                    </svg>
+                                </a>
+                                <div class="menu__projects" data-menu-dropdown>
+                                    <a href="#">Экибастузский Технический Колледж</a>
+                                    <a href="#">Международный образовательный центр</a>
+                                </div>
+                            </li>
+                            <li class="menu__item" data-menu-item><a href="news.html">Новости</a></li>
+                            <li class="menu__item" data-menu-item><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header__langs">
+                        <li class="header__lang header__lang_active"><a href="#">RU</a></li>
+                        <li class="header__lang"><a href="#">KZ</a></li>
+                        <li class="header__lang"><a href="#">EN</a></li>
                     </ul>
-                </nav>
-                <ul class="header__langs">
-                    <li class="header__lang header__lang_active"><a href="#">RU</a></li>
-                    <li class="header__lang"><a href="#">KZ</a></li>
-                    <li class="header__lang"><a href="#">EN</a></li>
-                </ul>
+                </div>
+                <svg class="header__hamburger" data-hamburger width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                    <rect y="6.39999" width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                    <rect y="12.8" width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                </svg>
             </div>
         </div>
     </header>
@@ -47,7 +59,7 @@
             <div class="container">
                 <div class="promo__row promo__row_center">
                     <div class="promo__wrapper">
-                        <h1 class="min-promo__title">Международный образовательный центр Innova Tree</h1>
+                        <h1 class="min-promo__title">Международный образовательный центр Бiлiм Ордасы</h1>
                         <a href="#" class="promo__link">оставить заявку</a>
                     </div>
                 </div>
@@ -105,7 +117,7 @@
                 <a href="kidcenter.html" class="c-grid__item-link">
                     <div class="c-grid__item-title">ДЕТСКИЙ ЦЕНТР 
                         ОБУЧЕНИЯ 
-                        И РАЗВИТИЯ INNOVA TREE</div>
+                        И РАЗВИТИЯ Бiлiм Ордасы</div>
                     <svg class="c-grid__item-arrow" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.8125 0.4375V4.1875H22.1688L0.4375 25.9188L3.08125 28.5625L24.8125 6.83125V19.1875H28.5625V0.4375H9.8125Z" fill="white"/>
                     </svg>
@@ -181,6 +193,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/header.js"></script>
     
 </body>
 </html>

@@ -16,27 +16,39 @@
         <div class="container">
             <div class="header__row">
                 <a href="index.html" class="header__logo"><img src="icons/logo.png" alt=""></a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="index.html">Главная</a></li>
-                        <li class="menu__item"><a href="about.html">О нас</a></li>
-                        <li class="menu__item"><a href="students.html">Студенту</a></li>
-                        <li class="menu__item"><a href="#">
-                            Проекты 
-                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 7.39844L12.1244 0.5H0L6 7.39844Z" fill="#A8A8A8"/>
-                            </svg>
-                        </a>
-                        </li>
-                        <li class="menu__item"><a href="news.html">Новости</a></li>
-                        <li class="menu__item"><a href="#">Контакты</a></li>
+                <div class="header__mobile" data-menu-mobile>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item" data-menu-item><a href="index.html">Главная</a></li>
+                            <li class="menu__item" data-menu-item><a href="about.html">О нас</a></li>
+                            <li class="menu__item" data-menu-item><a href="students.html">Студенту</a></li>
+                            <li class="menu__item" data-menu-item id="menuProjects" data-menu-projects>
+                                <a href="#">
+                                Проекты 
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 7.39844L12.1244 0.5H0L6 7.39844Z" fill="#A8A8A8"/>
+                                    </svg>
+                                </a>
+                                <div class="menu__projects" data-menu-dropdown>
+                                    <a href="#">Экибастузский Технический Колледж</a>
+                                    <a href="#">Международный образовательный центр</a>
+                                </div>
+                            </li>
+                            <li class="menu__item" data-menu-item><a href="news.html">Новости</a></li>
+                            <li class="menu__item" data-menu-item><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header__langs">
+                        <li class="header__lang header__lang_active"><a href="#">RU</a></li>
+                        <li class="header__lang"><a href="#">KZ</a></li>
+                        <li class="header__lang"><a href="#">EN</a></li>
                     </ul>
-                </nav>
-                <ul class="header__langs">
-                    <li class="header__lang header__lang_active"><a href="#">RU</a></li>
-                    <li class="header__lang"><a href="#">KZ</a></li>
-                    <li class="header__lang"><a href="#">EN</a></li>
-                </ul>
+                </div>
+                <svg class="header__hamburger" data-hamburger width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                    <rect y="6.39999" width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                    <rect y="12.8" width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                </svg>
             </div>
         </div>
     </header>
@@ -57,7 +69,7 @@
         <section class="course">
             <div class="container">
                 <div class="course__text course__text_center">
-                    <p><strong>Главная цель и задача футбольного центра Innova Tree</strong> — это подготовка юных футболистов к профессиональному футболу. Присоединяясь к нашей школе, юные футболисты становятся частью большой футбольной семьи, а также попадают в основание своей спортивной карьерной лестницы.</p>
+                    <p><strong>Главная цель и задача футбольного центра Бiлiм Ордасы</strong> — это подготовка юных футболистов к профессиональному футболу. Присоединяясь к нашей школе, юные футболисты становятся частью большой футбольной семьи, а также попадают в основание своей спортивной карьерной лестницы.</p>
                     <p>Несколько раз в год ученики нашей футбольной школы будут участвовать в просмотре квалифицированными селекционерами различных футбольных клубов, а самые талантливые и способные получают возможность присоединится к основной и молодежной командам.</p>
                     <p>Наша школа ставит перед собой задачу воспитать поистине сильных футболистов, которые завтра помогут сборной Казахстана показать себя на мировой арене и популяризировать детский футбол и вовлечь как можно больше наших детей в здоровый образ жизни.</p>
                 </div>
@@ -122,6 +134,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/header.js"></script>
     
 </body>
 </html>

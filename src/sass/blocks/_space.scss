@@ -15,4 +15,50 @@
         line-height: 163.52%;
         color: #171717;
     }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1299px) {
+    .space {
+        &__grid {
+            grid-template-columns: 390px 445px;
+            grid-template-rows: minmax(350px,auto);
+        }
+    }
+}
+
+@media (max-width: 1139px) {
+    .space {
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .space {
+        &__grid {
+            grid-template-columns: 320px 380px;
+            column-gap: 30px;
+            grid-template-rows: minmax(320px,auto);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .space {
+        padding: 50px 0 30px;
+        &__grid {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__img {
+            margin-top: 10px;
+        }
+    }
 }

@@ -16,27 +16,39 @@
         <div class="container">
             <div class="header__row">
                 <a href="index.html" class="header__logo"><img src="icons/logo.png" alt=""></a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="index.html">Главная</a></li>
-                        <li class="menu__item"><a href="about.html">О нас</a></li>
-                        <li class="menu__item"><a href="students.html">Студенту</a></li>
-                        <li class="menu__item"><a href="#">
-                            Проекты 
-                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 7.39844L12.1244 0.5H0L6 7.39844Z" fill="#A8A8A8"/>
-                            </svg>
-                        </a>
-                        </li>
-                        <li class="menu__item"><a href="news.html">Новости</a></li>
-                        <li class="menu__item"><a href="#">Контакты</a></li>
+                <div class="header__mobile" data-menu-mobile>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item" data-menu-item><a href="index.html">Главная</a></li>
+                            <li class="menu__item" data-menu-item><a href="about.html">О нас</a></li>
+                            <li class="menu__item" data-menu-item><a href="students.html">Студенту</a></li>
+                            <li class="menu__item" data-menu-item id="menuProjects" data-menu-projects>
+                                <a href="#">
+                                Проекты 
+                                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 7.39844L12.1244 0.5H0L6 7.39844Z" fill="#A8A8A8"/>
+                                    </svg>
+                                </a>
+                                <div class="menu__projects" data-menu-dropdown>
+                                    <a href="#">Экибастузский Технический Колледж</a>
+                                    <a href="#">Международный образовательный центр</a>
+                                </div>
+                            </li>
+                            <li class="menu__item" data-menu-item><a href="news.html">Новости</a></li>
+                            <li class="menu__item" data-menu-item><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header__langs">
+                        <li class="header__lang header__lang_active"><a href="#">RU</a></li>
+                        <li class="header__lang"><a href="#">KZ</a></li>
+                        <li class="header__lang"><a href="#">EN</a></li>
                     </ul>
-                </nav>
-                <ul class="header__langs">
-                    <li class="header__lang header__lang_active"><a href="#">RU</a></li>
-                    <li class="header__lang"><a href="#">KZ</a></li>
-                    <li class="header__lang"><a href="#">EN</a></li>
-                </ul>
+                </div>
+                <svg class="header__hamburger" data-hamburger width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                    <rect y="6.39999" width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                    <rect y="12.8" width="24.9333" height="3.4" rx="1" fill="#57B039"/>
+                </svg>
             </div>
         </div>
     </header>
@@ -47,7 +59,7 @@
             <div class="container">
                 <div class="promo__row promo__row_kidcenter">
                     <div class="promo__wrapper">
-                        <h1 class="min-promo__title">ДЕТСКИЙ ЦЕНТР ОБУЧЕНИЯ И РАЗВИТИЯ INNOVA TREE</h1>
+                        <h1 class="min-promo__title">ДЕТСКИЙ ЦЕНТР ОБУЧЕНИЯ И РАЗВИТИЯ Бiлiм Ордасы</h1>
                         <a href="#" class="promo__link">оставить заявку</a>
                     </div>
                 </div>
@@ -57,14 +69,14 @@
         <section class="course">
             <div class="container">
                 <div class="course__text course__text_center">
-                    <p>Цель детского центра обучения и развития INNOVA TREE – развитие ребенка начиная с дошкольного возраста, его познавательных навыков, которые помогут ему во всей дальнейшей жизни.</p>
+                    <p>Цель детского центра обучения и развития Бiлiм Ордасы – развитие ребенка начиная с дошкольного возраста, его познавательных навыков, которые помогут ему во всей дальнейшей жизни.</p>
                     <p>В нашем центре будут доступны групповые занятия по английскому языку, музыкально-ритмическим занятиям, творческому развитию, математики и многое другое.</p>
                     <br><br>
                 </div>
                 <div class="course__text course__text">
                     <h2>Что мы предлагаем?</h2>
                     <p><strong>Подготовка к школе.</strong></p>
-                    <p>В детском центре INNOVA TREE преподают основные принципы подготовки к школе, которые включают в себя комплекс занятий по адаптации ребенка в новом коллективе. Развитие речи, грамота и чтение, математика, окружающий мир, навыки владения письмом, общие представления о себе и семье, представления о школе, психологическая готовность и физическое развитие. </p>
+                    <p>В детском центре Бiлiм Ордасы преподают основные принципы подготовки к школе, которые включают в себя комплекс занятий по адаптации ребенка в новом коллективе. Развитие речи, грамота и чтение, математика, окружающий мир, навыки владения письмом, общие представления о себе и семье, представления о школе, психологическая готовность и физическое развитие. </p>
                     <br>
                     <p><strong>Группа кратковременного пребывания.</strong></p>
                     <p>В нашем детском развивающем центре, применяется методика совместного преподавания педагогом на трех языках — русском, казахском и английском, что формирует игровую развивающую среду и является одним из наиболее эффективных способов изучения иностранного языка. <br>
@@ -135,6 +147,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/header.js"></script>
     
 </body>
 </html>

@@ -57,3 +57,21 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .solutions {
+        padding: 50px 0 30px;
+        &__grid {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__img {
+            height: auto;
+            width: 100%;
+        }
+        &__text {
+            padding-right: 0;
+        }
+    }
+}

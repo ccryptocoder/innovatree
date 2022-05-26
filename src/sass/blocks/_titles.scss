@@ -23,3 +23,17 @@
         line-height: 42px;
     }
 }
+
+@media (max-width: 767px)  {
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 424px) {
+    .title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

@@ -120,3 +120,29 @@
         }
     }
 }
+
+@media (max-width: 767px) { //425
+    .promo {
+        &__row {
+            height: 350px;
+            padding: 20px 25px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 424px) { //375
+    .promo {
+        &__row {
+            padding: 20px 10px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__subtitle, &__link {
+            font-size: 16px;
+        }
+    }
+}
