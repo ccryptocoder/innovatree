@@ -44,3 +44,36 @@
         }
     }
 }
+
+@media (max-width: 1023px) { //768
+    .gen-form {
+        padding: 40px 0 100px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .gen-form {
+        input[type=submit] {
+            right: -52px;
+        }
+    }
+}
+
+/* @media (max-width: 424px) { 
+    .gen-form {
+        input[type=submit] {
+            right: -32px;
+        }
+    }
+} */
+
+@media (max-width: 424px) { 
+    .gen-form {
+        input[type=submit] {
+            // right: -9px;
+            // bottom: -45px;
+            position: static;
+            margin-top: 25px;
+        }
+    }
+}

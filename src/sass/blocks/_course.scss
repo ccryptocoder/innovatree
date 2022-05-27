@@ -47,3 +47,12 @@
         }
     }
 }
+
+@media (max-width: 1023px) { //768 
+    .course {
+        padding: 60px 0 30px;
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

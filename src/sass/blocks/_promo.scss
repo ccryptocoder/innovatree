@@ -66,7 +66,7 @@
         text-decoration: underline;
         text-transform: uppercase;
         &:hover {
-            color: #FFFFFF;
+            color: #00C834;
         }
     }
 }
@@ -100,6 +100,14 @@
             font-size: 22px;
         }
     }
+    .min-promo {
+        &__title {
+            font-size: 48px;
+        }
+        &__subtitle {
+            font-size: 22px;
+        }
+    }
 } 
 
 @media (max-width: 1023px) { //768
@@ -119,6 +127,17 @@
             font-size: 18px;
         }
     }
+    .min-promo {
+        &__title {
+            font-size: 40px;
+            line-height: 46px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
 }
 
 @media (max-width: 767px) { //425
@@ -129,6 +148,12 @@
         }
         &__title {
             font-size: 30px;
+        }
+    }
+    .min-promo {
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
         }
     }
 }
