@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     ['mouseover', 'click'].forEach(event => {
         menuProjs.addEventListener(event, (e) => {
-            e.preventDefault();
             menuDropdown.classList.add('menu__projects_active')
         })
     })
