@@ -1,0 +1,53 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    &_active {
+        visibility: visible;
+        opacity: 1;
+    }
+    &__overlay {
+        display: grid;
+        place-content: center;
+        width: 100vw; height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    &__card {
+        padding: 10px 15px;
+        position: relative;
+        width: 415px;
+        min-height: 415px;
+        max-height: 100vh;
+        overflow: auto;
+        background: #FFF;
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 2px;
+    }
+    &__close {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 767px) {
+    .popup {
+        &__card {
+            width: 375px;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .popup {
+        &__card {
+            width: 320px;
+        }
+    }
+}

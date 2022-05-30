@@ -60,7 +60,7 @@
                 <div class="promo__row promo__row_kids">
                     <div class="promo__wrapper">
                         <h1 class="min-promo__title">КУРСЫ АНГЛИЙСКОГО <br> ДЛЯ ДЕТЕЙ</h1>
-                        <a href="#" class="promo__link">оставить заявку</a>
+                        <a href="#" class="promo__link" data-submit-application>оставить заявку</a>
                     </div>
                 </div>
             </div>
@@ -93,6 +93,29 @@
         </div>
 
     </main>
+
+    <div class="popup" data-popup>
+        <div class="popup__overlay">
+            <div class="popup__card">
+                <div class="popup__close" data-popup-close>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z" fill="#181818"/>
+                    </svg>
+                </div>
+
+                <div class="gen-form gen-form_popup">
+                    <div class="gen-form__title">оСТАВИТЬ ЗАЯВКУ</div>
+                    <form class="gen-form__form">
+                        <input type="text" placeholder="Имя" name="name">
+                        <input type="email" placeholder="e-mail" name="email">
+                        <input type="tel" placeholder="+ 7 777 666 55 55" name="tel">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -148,6 +171,7 @@
     </footer>
 
     <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
     
 </body>
 </html>
