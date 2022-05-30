@@ -39,6 +39,11 @@
             justify-content: space-between;
             align-items: flex-end;
             text-decoration: none;
+            &:hover {
+                .c-grid__item-title {
+                    color: #00C834;
+                }
+            }
         }
         &-title {
             max-width: 320px;
