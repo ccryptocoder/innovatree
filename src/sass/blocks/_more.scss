@@ -1,6 +1,14 @@
 .more {
     padding-top: 100px;
+    &__to-top {
+        position: absolute;
+        right: 0;
+        top: -40px;
+        cursor: pointer;
+        display: none;
+    }
     &__row {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -75,6 +83,9 @@
         }
         &__link {
             font-size: 18px;
+        }
+        &__to-top {
+            display: block;
         }
     }
 }
