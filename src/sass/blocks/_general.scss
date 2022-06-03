@@ -13,6 +13,37 @@ body {
     min-width: 320px;
 }
 
+.gen-text {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: inherit;
+        line-height: 163.52%;
+        color: #171717;
+        max-width: 450px;
+        li {
+            position: relative;
+            margin-bottom: 5px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background: #171717;
+                top: 13px;
+                left: -16px;
+            }
+            // &:not(:last-child) {
+            //     
+            // }
+        }
+    }
+}
+
 .container {
     width: 1280px;
     margin: 0 auto;
