@@ -115,15 +115,7 @@
     }
 }
 
-@media (max-width: 1023px) {
-    .menu {
-        &__item:not(:last-child) {
-            margin-right: calc(25px + 0.5vw);
-        }
-    }
-}
-
-@media (max-width: 767px) { //425
+@media (max-width: 1139px) { //425
     .header {
         &__hamburger {
             display: block;
