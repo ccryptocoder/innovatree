@@ -43,6 +43,12 @@ gulp.task('html', function () {
         .pipe(gulp.dest("dist/"));
 });
 
+gulp.task('html-en', function () {
+    return gulp.src("src/en/*.html")
+        // .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest("dist/en/"));
+});
+
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
         .pipe(gulp.dest("dist/js"))
